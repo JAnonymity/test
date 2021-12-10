@@ -1,31 +1,31 @@
 #include<stdio.h>
 
-//É¾³ı×Ö·û´®ÖĞµÄËùÓĞ¿Õ¸ñ 
+//åˆ é™¤å­—ç¬¦ä¸²ä¸­çš„æ‰€æœ‰ç©ºæ ¼ 
 
-void fun(char a[80])
+void fun(char str[80])
 {
 	int i=0;
 	
-	char *p=a;//Ö¸ÏòµÚÒ»¸öÊı×éÔªËØÊ×µØÖ·
+	char *p=str;//æŒ‡å‘ç¬¬ä¸€ä¸ªæ•°ç»„å…ƒç´ é¦–åœ°å€
 	
 	while(*p) 
 	{
 		if(*p!=' ')
 		{
-			a[i++]=*p;
+			str[i++]=*p;
 		}
 		p++;
 	}
 	
-	a[i]='\0';
+	str[i]='\0';
 }
 void main()
 {
-	char a[80];
+	char str[80];
 	
-	gets(a);
+	gets(str);
 	
-	fun(a);
+	fun(str);
 	
-	puts(a);
+	puts(str);
 }
